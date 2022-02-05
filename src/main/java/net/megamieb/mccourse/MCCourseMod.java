@@ -1,6 +1,8 @@
 package net.megamieb.mccourse;
 
 import net.fabricmc.api.ModInitializer;
+import net.megamieb.mccourse.block.ModBlocks;
+import net.megamieb.mccourse.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,8 +13,9 @@ public class MCCourseMod implements ModInitializer {
 	// A comment
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 
-		LOGGER.info("Hello Fabric world!");
 	}
 }
