@@ -2,6 +2,7 @@ package net.megamieb.mccourse.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.megamieb.mccourse.MCCourseMod;
+import net.megamieb.mccourse.item.custom.DowsingRodItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -15,6 +16,16 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroups.COURSE)));
 
     public static final Item RAW_ORICHALCUM = registerItem("raw_orichalcum",
+            new Item(new FabricItemSettings().group(ModItemGroups.COURSE)));
+
+
+    public static final Item DOWSING_ROD = registerItem("dowsing_rod",
+            new DowsingRodItem(new FabricItemSettings().group(ModItemGroups.COURSE).maxDamage(32)));
+
+    public static final Item TURNIP = registerItem("turnip",
+            new Item(new FabricItemSettings().group(ModItemGroups.COURSE).food(ModFoodComponents.TURNIP)));
+
+    public static final Item COAL_SLIVER = registerItem("coal_sliver",
             new Item(new FabricItemSettings().group(ModItemGroups.COURSE)));
 
 
